@@ -8,6 +8,12 @@ export async function getPokemons(args) {
   return searchedPokemons || null;
 }
 
+export async function getPokemonsRange(args){
+  const searchedPokemons = pokemons.slice(args.start, args.end);
+
+  return searchedPokemons || null;
+}
+
 export async function getPokemonById(pokemonId) {
   const pokemon = pokemons.filter(({ id }) =>
     parseInt(id, 10) === parseInt(pokemonId, 10)

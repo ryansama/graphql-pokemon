@@ -13,6 +13,7 @@ import PokemonType from './PokemonType';
 
 import {
   getPokemons,
+  getPokemonsRange,
   getPokemonById,
   getPokemonByName,
 } from '../service/Pokemon';
@@ -34,6 +35,18 @@ const QueryType = new GraphQLObjectType({
         },
       },
       resolve: async (obj, args) => await getPokemons(args),
+    },
+    pokemonsRange: {
+      type: new GraphQLList(PokemonType),
+      args: {
+        start: {
+          type: new GraphQLNonNull(GraphQLInt),
+        },
+        end: {
+          type: new GraphQLNonNull(GraphQLInt),
+        }
+      },
+      resolve: async (obj, args) => await getPokemonsRange(args),
     },
     pokemon: {
       type: PokemonType,
