@@ -1,3 +1,5 @@
+#### My fork of [Lucas Bento](https://github.com/lucasbento)'s [GraphQL Pokémon](https://github.com/lucasbento/graphql-pokemon/)
+
 <p align="center">
   <img src="https://github.com/lucasbento/graphql-pokemon/raw/master/content/logo.png">
 </p>
