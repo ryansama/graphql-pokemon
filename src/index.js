@@ -5,7 +5,7 @@ import app from './app';
 const PORT = 5000;
 
 (async() => {
-  await app.listen(PORT);
+  await app.listen(process.env.PORT || PORT);
 
   console.log(`GraphQL-Pokemon started on http://localhost:${PORT}/`);
 })();
