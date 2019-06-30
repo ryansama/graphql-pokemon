@@ -49,6 +49,9 @@ type Pokemon {
   # The evolutions of this Pokémon
   evolutions: [Pokemon]
 
+  # The previous evolutions of this Pokémon
+  prevEvolutions: [Pokemon]
+
   # The evolution requirements of this Pokémon
   evolutionRequirements: PokemonEvolutionRequirement
 

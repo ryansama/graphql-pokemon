@@ -74,6 +74,11 @@ const PokemonType = new GraphQLObjectType({
       description: 'The maximum CP of this Pokémon',
       resolve: obj => obj.maxCP,
     },
+    prevEvolutions: {
+      type: new GraphQLList(PokemonType),
+      description: 'The evolutions of this Pokémon',
+      resolve: async obj => obj.prevEvolutions
+    },
     evolutions: {
       type: new GraphQLList(PokemonType),
       description: 'The evolutions of this Pokémon',

@@ -315,6 +315,22 @@
               "deprecationReason": null
             },
             {
+              "name": "prevEvolutions",
+              "description": "The previous evolutions of this Pokémon",
+              "args": [],
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "OBJECT",
+                  "name": "Pokemon",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "evolutions",
               "description": "The evolutions of this Pokémon",
               "args": [],
